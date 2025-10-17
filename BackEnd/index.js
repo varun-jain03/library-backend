@@ -13,12 +13,13 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+connectDB();
+
 app.use('/auth', authRoutes);
 app.use('/books', bookRoutes);
 app.use('/mybooks', myBookRoutes);
 
 
-connectDB();
 app.listen(8080, () => {
     connectDB();    
     console.log('the server is running on http://localhost:8080');
