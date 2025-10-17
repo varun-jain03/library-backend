@@ -25,4 +25,4 @@ bookRoutes.post('/', async (req, res) => {
     }
 })
 
-module.exports = { bookRoutes }
+module.exports = bookRoutes;
