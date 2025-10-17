@@ -18,8 +18,8 @@ app.use('/books', bookRoutes);
 app.use('/mybooks', myBookRoutes);
 
 
-
+connectDB();
 app.listen(8080, () => {
-    connectDB();
+    connectDB();    
     console.log('the server is running on http://localhost:8080');
 })
