@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use('/auth', authRoutes);
-app.use('/books');
+app.use('/books', bookRoutes);
 app.use('/mybooks', myBookRoutes);
 
 
